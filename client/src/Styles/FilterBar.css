@@ -1,0 +1,137 @@
+.primaryContainer {
+  font-family:sans-serif;
+  flex-direction:row;
+  display: flex;
+  justify-content: flex-end;
+  align-items:center;
+  height:35px;
+  margin-bottom:20px;
+  font-size:1.2em;
+}
+
+.subContainer {
+  font-family:sans-serif;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.subLeft {
+  display:block;
+  font-size:1.2em;
+}
+
+.subRight {
+  display:block;
+}
+
+.main {
+  display: inline-block;
+  margin: 0px 5px;
+  position: relative;
+  cursor:pointer;
+}
+
+.main.wide {
+  margin: 0px 10px;
+}
+
+.tile {
+  display: inline-block;
+  position:relative;
+  margin: 0px 5px;
+}
+
+.tile.text {
+  color: #000;
+  font-weight:550;
+}
+
+.tile.chevron {
+  color:#989898;
+  font-weight:550;
+}
+
+.tile.sort {
+  font-weight:550;
+  color:#989898;
+}
+
+.button.sub {
+  font-weight:550;
+  color:#000;
+  padding:2px 40px;
+  font-weight: 550;
+  border: solid 1px #000;
+  border-radius:0;
+}
+
+.button.x {
+  font-weight:550;
+  color:#000;
+  border:none;
+}
+
+.options {
+  position: absolute;
+  z-index:99;
+  top: 25px;
+  left: -94px;
+  width:200px;
+  background-color: #fff;
+  border: solid 1px #989898;
+  padding-top:15px;
+  border-radius:5px;
+}
+.options::before {
+  transform: rotate(45deg);
+  position: absolute;
+  background-color:#fff;
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid #989898;
+  border-right: 0px solid  #989898;
+  border-bottom: 0px solid  #989898;
+  border-left: 1px solid  #989898;
+  top: 0%;
+  left: 50%;
+  margin-top: -6px;
+  margin-left: -5px;
+  content: "";
+}
+
+@media only screen and (max-width: 1750px) {
+  .primaryContainer {
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 945px) {
+  .button.sub {
+    padding:2px 10px;
+  }
+  .main.wide{
+    margin: 0px 5px;
+  }
+}
+
+@media only screen and (max-width: 790px){
+  .primaryContainer {
+    font-size:1em;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+  .subContainer {
+    flex-direction:column-reverse;
+  }
+  .subLeft {
+    align-self:flex-start;
+    font-size:1em;
+  }
+  .subRight {
+    align-self:flex-start;
+    margin-bottom:20px;
+  }
+}

@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+  margin-top:10px;
+  margin-bottom:20px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:flex-end;
+  color: #989898;
+  height: 135px;
+  font-family: sans-serif;
+}
+
+.containerRight{
+  height:70px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding:0px 5px;
+  font-size:1.2em;
+  font-weight:550;
+}
+
+.searchResults{
+  color: #000;
+  font-size: 4em;
+  font-weight:1000;
+  margin: 0px;
+  letter-spacing: -2px;
+  text-align:left;
+  line-height:40pt;
+}
+
+.main {
+  display: inline-block;
+  margin: 0px 9px;
+}
+
+.main:hover{
+  color:black;
+}
+
+.main.selected{
+  margin: 5px 5px 2px 5px;
+  border-bottom: 3px solid blue;
+}
+
+.tile {
+  display: inline-block;
+  margin: 0px 4px;
+}
+
+.view{
+  background-color:#fff;
+  align-self:flex-start;
+  color:#000;
+  border: solid 2px #989898;
+  margin:0px 5px;
+}
+
+.view.selected {
+  display: inline-block;
+  border: solid 2px #000;
+  background-color: #000;
+  color:#fff;
+}
+
+.button.view{
+  color:inherit;
+  min-width:0;
+  padding:7px;
+  font-size:1.3em;
+}
+
+@media only screen and (max-width: 1180px) {
+  .container{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+  .spacer{
+    display:none;
+  }
+  .containerRight{
+    align-self: flex-end;
+  }
+}
+@media only screen and (max-width:855px){
+  .tile.icon {
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .container{
+    align-items:center;
+  }
+  .searchResults{
+    font-size:2.8em;
+  }
+  .containerRight{
+    align-self:flex-end;
+    font-size:1em;
+  }
+  .spacer2{
+    display:block;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .searchResults{
+    font-size:2.5em;
+  }
+  .containerRight{
+    font-size:.75em;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .containerRight{
+    font-size:.7em;
+  }
+  .searchResults{
+    text-align:center;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .containerRight{
+    font-size:.6em;
+  }
+}
