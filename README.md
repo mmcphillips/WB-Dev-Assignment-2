@@ -18,7 +18,7 @@ npm run react-build
 From root directory,
 ```
 npm run server-start
-``
+```
 
 Access html document through browser at:
 localhost:3333
