@@ -18,6 +18,9 @@ const MovieEntryList = ({ movie }) => (
       <section className="list">
         <h4>{movie.Rating} / {movie.Genre}</h4>
       </section>
+      <section className="list">
+        <h4>Reviews: {movie.Reviews} / 100</h4>
+      </section>
       <section className="plot">
         <p>{movie.Plot}</p>
       </section>
