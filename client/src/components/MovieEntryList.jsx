@@ -16,10 +16,7 @@ const MovieEntryList = ({ movie }) => (
         <h4>{movie.Type}</h4>
       </section>
       <section className="list">
-        <h4>{movie.Rating}</h4>
-      </section>
-      <section className="list">
-        <h4>{movie.Genre}</h4>
+        <h4>{movie.Rating} / {movie.Genre}</h4>
       </section>
       <section className="plot">
         <p>{movie.Plot}</p>
