@@ -9,7 +9,7 @@ From root directory, install dependencies
 ```
 npm install
 ```
-# bundle webpack
+# bundle assets with webpack
 From root directory,
 ```
 npm run react-build
