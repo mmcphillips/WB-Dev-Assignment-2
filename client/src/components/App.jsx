@@ -163,7 +163,7 @@ export default class App extends React.Component {
   loadMoreEntries() {
     const { indexer } = this.state;
     const { length } = this.state.movies;
-    const newIndex = Math.min(indexer + 10, length);
+    const newIndex = Math.min(indexer + 12, length);
     this.setState({
       indexer: newIndex,
     });
