@@ -2,7 +2,7 @@
 A responsive front end assignment designed to filter and display movie titles with pertinent information.
 
 # Required Dependencies:
-node packet manager, node
+node-package manager, node
 
 # installation
 From root directory, install dependencies
